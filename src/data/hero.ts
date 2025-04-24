@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
+    heading: 'รับซ่อม iPhone iPad MacBook iMac',
+    subheading: 'เปลี่ยนแบต เปลี่ยนจอ อัปเกรดเครื่อง แก้ปัญหาเครื่องดับ เครื่องร้อน น้ำเข้ารับประกันงานซ่อม ใช้อะไหล่คุณภาพสูง',
     centerImageSrc: '/images/hero-mockup.webp',
 }

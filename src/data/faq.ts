@@ -3,23 +3,23 @@ import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
     {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
+        question: `1. ใช้เวลาในการซ่อมนานแค่ไหน?`,
+        answer: 'ตอบ: เวลาซ่อมขึ้นอยู่กับประเภทของงาน เช่นเปลี่ยนแบตเตอรี่: 30-60 นาทีเปลี่ยนหน้าจอ: 1-2 ชั่วโมงงานเมนบอร์ดหรือน้ำเข้า: 1-3 วัน (ขึ้นกับอาการ)',
     },
     {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
+        question: `2. อะไหล่ที่ใช้เป็นของแท้หรือไม่?`,
+        answer: 'ตอบ: เราใช้อะไหล่คุณภาพสูงระดับพรีเมียม ทั้งแท้ศูนย์และเทียบเท่า (OEM) โดยจะแจ้งลูกค้าให้ทราบก่อนทุกครั้ง',
     },
     {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
+        question: '3. มีการรับประกันงานซ่อมหรือไม่?',
+        answer: `ตอบ: มีครับ งานซ่อมทั่วไปเช่น เปลี่ยนจอ, เปลี่ยนแบต รับประกัน 30-90 วัน ขึ้นกับประเภทงาน และเงื่อนไขการใช้งาน`
     },
     {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
+        question: '4. ถ้าอยู่ต่างจังหวัดสามารถส่งซ่อมได้ไหม?',
+        answer: 'ตอบ:ได้ครับ! ลูกค้าสามารถจัดส่งเครื่องมาทางไปรษณีย์หรือขนส่งเอกชนได้ เรามีบริการจัดส่งกลับถึงบ้านแบบมีประกันพัสดุ',
     },
     {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        question: '5. ตรวจเช็คอาการเบื้องต้นมีค่าใช้จ่ายหรือไม่?',
+        answer: 'ตอบ: ไม่มีค่าใช้จ่าย เราตรวจเช็คฟรี และจะแจ้งราคาก่อนซ่อมทุกครั้ง ไม่มีบวกเพิ่มภายหลังแน่นอน'
     }
 ];

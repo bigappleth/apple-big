@@ -55,6 +55,7 @@ const Logos: React.FC = () => {
                         </clipPath>
                     </defs>
                 </svg>
+
             </div>
         </section>
     )

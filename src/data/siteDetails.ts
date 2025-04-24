@@ -1,12 +1,14 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'int.services',
+    siteUrl: 'https://intservices.com/',
+    siteNotice: 'iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc.',
+    siteInt: 'int.services is a third-party repair company and is not affiliated with Apple.',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'int.services - Apple Repair Specialists',
+        description: ' int.services is an independent Apple specialized repair center that provides repairs.',
     },
-    language: 'en-us',
-    locale: 'en-US',
+    language: 'th-th',
+    locale: 'th-TH',
     siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
     googleAnalyticsId: '', // e.g. G-XXXXXXX,
 }
