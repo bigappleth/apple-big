@@ -1,4 +1,4 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { FiLock,  FiShield, FiTrendingUp, FiUser } from "react-icons/fi";
 import { FaBahtSign, FaBuilding, FaTabletScreenButton, FaDatabase, FaApple } from "react-icons/fa6";
 import { SiThunderstore } from "react-icons/si";
 import { RiVerifiedBadgeFill, RiWaterFlashFill, RiMicroscopeFill } from "react-icons/ri";
