@@ -1,3 +1,5 @@
+[![sayz-banner](https://github.com/user-attachments/assets/9a830e85-9b4d-4a8f-9e54-4a19265591b1)](https://github.com/sayz-rio)
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnexi-launch%2Ffinwise-landing-page)
 
 # Finwise - Next.js + Tailwind Landing Page Template
