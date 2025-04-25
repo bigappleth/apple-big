@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { kanit, inter } from "./ui/fonts";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -45,6 +46,7 @@ export default function RootLayout({
       >
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
+        <SpeedInsights/>
         <main>
           {children}
         </main>
