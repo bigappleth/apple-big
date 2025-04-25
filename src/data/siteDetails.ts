@@ -1,5 +1,5 @@
 export const siteDetails = {
-    siteName: '',
+    siteName: 'int.',
     siteUrl: 'https://intservices.com/',
     siteNotice: 'iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc.',
     siteInt: 'int.services is a third-party repair company and is not affiliated with Apple.',

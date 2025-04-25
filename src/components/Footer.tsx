@@ -57,10 +57,10 @@ const Footer: React.FC = () => {
                     )}
                 </div>
             </div>
-            <div className="mt-8 md:text-center font-semibold text-foreground-accent px-6">
+            <div className="mt-8 md:text-center font-normal text-foreground-accent px-6">
                 <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
-                <p className='text-xs'>{siteDetails.siteNotice}</p>
-                <p className='text-xs'>{siteDetails.siteInt}</p>
+                <p className='text-xs font-thin mt-3'>{siteDetails.siteNotice}</p>
+                <p className='text-xs font-thin'>{siteDetails.siteInt}</p>
             </div>
         </footer>
     );
