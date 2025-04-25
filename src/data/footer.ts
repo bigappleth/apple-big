@@ -29,11 +29,11 @@ export const footerDetails: {
     email: 'admin@intservices.com',
     telephone: '063-117-0885',
     socials: {
-        facebook: 'https://facebook.com',
-        line: 'https://www.instagram.com',
-        youtube: 'https://youtube.com',
+        facebook: 'https://facebook.com/nit.computerpc',
+        line: 'https://lin.ee/yvHk4yQ',
+        youtube: 'https://youtube.com/@int-100',
         x: 'https://twitter.com/x',
-        github: 'https://github.com',
-        linkedin: 'https://www.linkedin.com',
+        github: 'https://github.com/sayz-rio',
+        linkedin: 'https://www.linkedin.com/in/int-services',
     }
 }
