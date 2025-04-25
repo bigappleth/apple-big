@@ -29,13 +29,11 @@ export const footerDetails: {
     email: 'admin@intservices.com',
     telephone: '063-117-0885',
     socials: {
-        github: 'https://github.com',
-        x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
         facebook: 'https://facebook.com',
+        line: 'https://www.instagram.com',
         youtube: 'https://youtube.com',
+        x: 'https://twitter.com/x',
+        github: 'https://github.com',
         linkedin: 'https://www.linkedin.com',
-        threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
     }
 }
