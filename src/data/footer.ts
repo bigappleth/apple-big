@@ -34,6 +34,6 @@ export const footerDetails: {
         youtube: 'https://youtube.com/@int-100',
         x: 'https://twitter.com/x',
         github: 'https://github.com/sayz-rio',
-        linkedin: 'https://www.linkedin.com/in/int-services',
+        linkedin: 'https://www.linkedin.com/in/int-service',
     }
 }
