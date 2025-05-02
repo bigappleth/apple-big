@@ -25,14 +25,16 @@ const Header: React.FC = () => {
                     <Link href="/" className="flex items-center gap-2">
                         <Image
                         src="/images/logo.png"
-                        width={32}
-                        height={32}
+                        width={34}
+                        height={34}
                         className='min-w-fit'
                         alt="Screenshot of the dashboard project showing mobile version"
                         />
+{/*
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </span>
+*/}
                     </Link>
 
                     {/* Desktop Menu */}
