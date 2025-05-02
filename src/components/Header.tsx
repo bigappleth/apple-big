@@ -25,8 +25,8 @@ const Header: React.FC = () => {
                     <Link href="/" className="flex items-center gap-2">
                         <Image
                         src="/images/logo.png"
-                        width={38}
-                        height={38}
+                        width={32}
+                        height={32}
                         className='min-w-fit'
                         alt="Screenshot of the dashboard project showing mobile version"
                         />
