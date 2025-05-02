@@ -7,7 +7,6 @@ import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 
 import Container from './Container';
-import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 
 const Header: React.FC = () => {
@@ -34,6 +33,7 @@ const Header: React.FC = () => {
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </span>
+import { siteDetails } from '@/data/siteDetails';
 */}
                     </Link>
 
