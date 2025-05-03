@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <Image
-                        src="/images/logo.png"
+                        src="/images/logo.PNG"
                         width={33}
                         height={33}
                         className='min-w-fit'
