@@ -1,7 +1,5 @@
-import { FiLock,  FiShield, FiTrendingUp, FiUser } from "react-icons/fi";
-import { FaBahtSign, FaBuilding, FaTabletScreenButton, FaDatabase, FaApple } from "react-icons/fa6";
-import { SiThunderstore } from "react-icons/si";
-import { RiVerifiedBadgeFill, RiWaterFlashFill, RiMicroscopeFill } from "react-icons/ri";
+import { FaDatabase } from "react-icons/fa6";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdLaptopMac } from "react-icons/md";
 import { BsBatteryCharging } from "react-icons/bs";
 
@@ -9,102 +7,62 @@ import { BsBatteryCharging } from "react-icons/bs";
 
 
 import { IBenefit } from "@/types"
+import Image from "next/image";
 
 export const benefits: IBenefit[] = [
     {
-        title: "WHY CHOOSE US",
+        title: "ขายกับเราดียังไง?",
         description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
         bullets: [
             {
-                title: "Apple Specialized",
-                description: "By specializing in Apple products, we insure that the correct repair and maintenance will be performed on your device.",
-                icon: <FaApple size={36} />
+                title: "ฟรี! ประเมินราคาก่อนขายจริง",
+                description: "ลูกค้าสามารถประเมินราคาก่อนทำการขายจริง เพียงส่งข้อมูลเข้ามาประเมินราคากับทางร้าน เราตรวจเช็คสภาพฟรีหรือส่ง EMS มาที่ร้านได้",
+                icon: <Image src="/images/icons/service.svg" alt="ฟรี! ประเมินราคาก่อนขายจริง" width={50} height={50} />, 
             },
             {
-                title: "Affordable Price",
-                description: "We service broken & out-of-warranty devices at a fraction of what the Apple Store charges.",
-                icon: <FaBahtSign size={26} />
+                title: "มั่นใจในบริการของเรา",
+                description: "สามารถต่อรองพูดคุยราคาก่อนขายได้ ให้ลูกค้าได้ตัดสินใจและกำหนดวัน เวลา สถานที่ให้เรามีบริการรับซื้อถึงที่ทั้งในกรุงเทพฯและปริมณฑล",
+                icon: <Image src="/images/icons/qc.svg" alt="ฟรี! ประเมินราคาก่อนขายจริง" width={50} height={50} />
             },
             {
-                title: "Locally Owned",
-                description: "We take pride in being a Mom-&-Pop shop so that we can provide each client with a personal experience.",
-                icon: <FaBuilding size={26} />
+                title: "จบราคาไว รับเงินทันที",
+                description: "เมื่อทำการตกลงราคากันแล้วทางร้านจะทำการจ่ายเงินให้ทันที จ่ายได้ทั้งเงินสดและโอนเงิน",
+                icon: <Image src="/images/icons/massenger.svg" alt="ฟรี! ประเมินราคาก่อนขายจริง" width={50} height={50} />
             },
             {
-                title: "Quick & Efficient",
-                description: "We stock our inventory with common Apple iPhone and Macintosh parts, allowing us to repair most devices same day.",
-                icon: <SiThunderstore size={26} />
-            },
-            {
-                title: "Warrantied",
-                description: "Almost all of our repairs come with a warranty, up to 1 year, giving clients a peace of mind.",
-                icon: <RiVerifiedBadgeFill size={26} />
-            },
-            {
-                title: "Precision Quality",
-                description: "We strive to make sure every repair is completed with precision and perfection.",
-                icon: <FiTrendingUp size={26} />
+                title: "ปลอดภัย ไม่เหลือข้อมูลเก่า",
+                description: "ข้อมูลของลูกค้าจะไม่รั่วไหล ทางร้านจะทำการล้างข้อมูลทันที เมื่อตกลงขายสินค้ากับเรา",
+                icon:<Image src="/images/icons/safe.svg" alt="ฟรี! ประเมินราคาก่อนขายจริง" width={50} height={50} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/banners/banners-3.png"
     },
     {
-        title: "MAIN SERVICES",
-        description: "We offer a variety of services from operating system repairs, to liquid damage cleaning, and physical damage restoration.",
+        title: "บริการของเรามีอะไรบ้าง ?",
+        description: "",
         bullets: [
             {
-                title: "IPHONE SCREEN REPAIR",
-                description: "Our screen repairs take only 45 minutes and come with a 1 year warranty.",
-                icon: <FaTabletScreenButton size={26} />
+                title: "รับซื้อ",
+                description: "เปลี่ยนเครื่องเก่าเป็นเงินสดทันที! เรายินดีรับซื้อ iPhone และ iPad มือสองทุกรุ่น ทุกสภาพ ให้ราคาที่สมเหตุสมผลและยุติธรรม ประเมินราคาฟรีถึงที่ หรือนัดรับได้ตามสะดวก หมดกังวลเรื่องการขายเอง ไม่ต้องรอนาน ได้เงินไวแน่นอน",
+                icon: <IoMdCheckmarkCircleOutline size={40} className=" fill-primary" />
             },
             {
-                title: "MAC REPAIR",
-                description: "From virus removal to logic board repair, we specialize in making your Mac like new again.",
-                icon: <MdLaptopMac size={26} />
+                title: "รับฝาก",
+                description: "ต้องการเงินด่วนแต่ยังไม่อยากขาย? บริการรับฝาก iPhone และ iPad ช่วยให้คุณได้รับเงินสดไปใช้จ่ายได้อย่างรวดเร็ว โดยที่คุณยังคงเป็นเจ้าของเครื่องอยู่ หมดห่วงเรื่องเอกสารยุ่งยาก อนุมัติไว ได้เงินทันใจ เครื่องของคุณจะถูกเก็บรักษาอย่างปลอดภัยในสถานที่ที่ได้มาตรฐาน",
+                icon: <IoMdCheckmarkCircleOutline size={40} className=" fill-primary" />
             },
             {
-                title: "BATTERY REPLACEMENT",
-                description: "Let us replace your battery so you don’t have to replace your device.",
-                icon: <BsBatteryCharging size={26} />
+                title: "รับผ่อน",
+                description: "เป็นเจ้าของ iPhone / iPad ในฝันได้ง่ายๆ! ไม่ต้องรอเงินก้อน เรามีบริการรับผ่อน iPhone และ iPad มือสอง ด้วยเงื่อนไขที่ยืดหยุ่นและอนุมัติไว ให้คุณสามารถผ่อนชำระได้ตามกำลังและความสะดวก เพื่อให้คุณได้ใช้งานอุปกรณ์ที่ต้องการโดยไม่ต้องกังวลเรื่องงบประมาณ",
+                icon: <IoMdCheckmarkCircleOutline size={40} className=" fill-primary" />
             },
             {
-                title: "DATA RECOVERY",
-                description: "If your computer or phone stopped powering on, we can attempt to recover your data.",
-                icon: <FaDatabase size={26} />
-            },
-            {
-                title: "LIQUID DAMAGE",
-                description: "We offer professional ultrasonic cleaning to restore your device after it’s been wet.",
-                icon: <RiWaterFlashFill size={26} />
-            },
-            {
-                title: "MICROSOLDER SERVICES",
-                description: "We have the ability to repair logic boards and other circuits with our micro soldering station.",
-                icon: <RiMicroscopeFill size={26} />
+                title: "รับเทิร์น",
+                description: "อัปเกรดเครื่องใหม่ได้คุ้มค่ากว่าเดิม! นำ iPhone หรือ iPad เครื่องเก่าของคุณมาแลกเป็นส่วนลดสำหรับซื้อเครื่องใหม่จากเราได้เลย ไม่ต้องเสียเวลาประกาศขายเองให้ยุ่งยาก เราตีราคาเครื่องเก่าของคุณอย่างยุติธรรม เพื่อให้คุณได้เป็นเจ้าของ iPhone หรือ iPad รุ่นใหม่ได้ในราคาที่คุ้มค่าที่สุด",
+                icon: <IoMdCheckmarkCircleOutline size={40} className=" fill-primary" />
             },
         ],
-        imageSrc: "/images/mockup-2.webp"
+        imageSrc: "/images/banners/banners-2.png"
     },
-    {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
-        bullets: [
-            {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
-            },
-            {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
-            },
-            {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
-                icon: <FiShield size={26} />
-            }
-        ],
-        imageSrc: "/images/mockup-1.webp"
-    },
+
 ]

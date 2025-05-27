@@ -1,11 +1,11 @@
 export const siteDetails = {
-    siteName: 'int.',
-    siteUrl: 'https://intservices.com/',
+    siteName: 'BIG APPLE STORE',
+    siteUrl: 'https://www.bigapplestorethailand.com/',
     siteNotice: 'iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc.',
-    siteInt: 'int.services is a third-party repair company and is not affiliated with Apple.',
+    siteInt: 'Big Apple store is a third-party resaler company and is not affiliated with Apple.',
     metadata: {
-        title: 'int.services - Apple Repair Specialists',
-        description: ' int.services is an independent Apple specialized repair center that provides repairs.',
+        title: 'Big Apple Store | Official - รับซื้อโทรศัพท์มือถือและสินค้าไอทีทุกชนิด',
+        description: 'เรามีบริการรับซื้อโทรศัพท์มือถือ iPhone, iPad, MacBook, AppleWatch, Samsung, Oppo, Vivo, รับซื้อกล้องถ่ายรูป, รับซื้อโน๊ตบุ๊ค, รับซื้อนาฬิกา, และสินค้าไอทีทุกชนิด',
     },
     language: 'th-th',
     locale: 'th-TH',

@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #304fff;
+  --primary: #021584;
   --secondary: #e5c230;
 
   --primary-accent: #233dcf;
@@ -31,18 +31,6 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.manrope {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 #logos svg {

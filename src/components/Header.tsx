@@ -4,10 +4,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFacebook, FaApple, FaLine, } from "react-icons/fa";
+import { FaFacebook, FaLine, } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import Container from './Container';
 import { menuItems } from '@/data/menuItems';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,14 +18,18 @@ const Header: React.FC = () => {
     };
 
     return (
-        <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
+        <header className="bg-primary fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
             <Container className="!px-0">
-                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-1 px-4 md:py-10 ">
+                <nav className="shadow-md md:shadow-none bg-primary md:bg-transparent mx-auto flex justify-between items-center py-1 px-4 md:py-10 ">
                     {/* Logo */}
-                    <Link href="/" className="flex -inset-1 items-center font-semibold text-2xl">
-                        <h1>Big</h1>
-                        <FaApple className=' pb-2 dark:invert size-11' />
-                        <h1>Apple</h1>
+                    <Link href="/" className="flex -inset-1 items-center">
+                        <Image
+                            priority
+                            src="/images/icons/logo.svg"
+                            height={140}
+                            width={140}
+                            alt="Big Apple Logo"
+                        />
                         {/*
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
@@ -37,13 +42,13 @@ import { siteDetails } from '@/data/siteDetails';
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
+                                <Link href={item.url} className="text-white hover:text-secondary transition-colors">
                                     {item.text}
                                 </Link>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-white bg-primary hover:bg-primary-accent px-4 py-2 rounded-full transition-colors">
+                            <Link href="#cta" className="text-white bg-primary-accent hover:bg-secondary px-4 py-2 rounded-full transition-colors">
                                 ติดต่อด่วน
                             </Link>
                         </li>
@@ -51,9 +56,9 @@ import { siteDetails } from '@/data/siteDetails';
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex gap-3 items-center">
-                        <div className='flex gap-2'>
+                        <div className='flex gap-4 text-white '>
                             <Link href='https://line.me/ti/p/~@bigapplestore'>
-                                <FaLine className='dark:invert size-6 md:size-9' />
+                                <FaLine className='size-6 md:size-9' />
                             </Link>
                             <Link href='https://www.facebook.com/bigapplestore824/'>
                                 <FaFacebook className='dark:invert size-6 md:size-9' />
@@ -66,7 +71,7 @@ import { siteDetails } from '@/data/siteDetails';
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-primary text-white focus:outline-none rounded-full px-1 py-1 flex items-center justify-center"
+                            className="bg-primary-accent hover:bg-secondary text-white focus:outline-none rounded-full px-1 py-1 flex items-center justify-center"
                             aria-controls="mobile-menu"
                             aria-expanded={isOpen}
                         >
@@ -91,17 +96,17 @@ import { siteDetails } from '@/data/siteDetails';
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
             >
-                <div id="mobile-menu" className="md:hidden bg-white shadow-lg">
+                <div id="mobile-menu" className="md:hidden bg-primary shadow-lg">
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
+                                <Link href={item.url} className="text-white hover:text-secondary block" onClick={toggleMenu}>
                                     {item.text}
                                 </Link>
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                            <Link href="tel: 080-583-9761" className="text-white bg-primary-accent hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
                                 ติดต่อด่วน
                             </Link>
                         </li>

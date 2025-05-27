@@ -1,5 +1,11 @@
 export const heroDetails = {
-    heading: 'ศูนย์ซ่อม Apple iPhone iPad MacBook iMac',
-    subheading: 'เปลี่ยนแบต เปลี่ยนจอ อัปเกรดเครื่อง แก้ปัญหาเครื่องดับ เครื่องร้อน น้ำเข้ารับประกันงานซ่อม ใช้อะไหล่คุณภาพสูง',
+    heading1: 'รับซื้อสินค้า APPLE',
+    heading2: 'ให้ราคาสูง จ่ายเงินทันที!',
+    heading3: 'บริการรับซื้อถึงที่',
+    subheading: 'หากคุณกำลังมองหาร้านรับซื้อ iPhone | iPad | MacBook | Apple Watchหรือ สมาร์ทโฟน Android ที่ให้ราคาดีบริการรวดเร็ว และน่าเชื่อถือ คุณมาถูกที่แล้ว!',
     centerImageSrc: '/images/hero-mockup.webp',
+    buy: '/images/services/buy.png',
+    letin: '/images/services/let-in.png',
+    install: '/images/services/install.png',
+    turn: '/images/services/turn.png',
 }

@@ -47,7 +47,7 @@ export const childVariants = {
 };
 
 const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
-    const { title, description, imageSrc, bullets } = benefit;
+    const { title, imageSrc, bullets } = benefit;
 
     return (
         <section className="benefit-section">
@@ -72,10 +72,6 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                                     {title}
                                 </h3>
                             </SectionTitle>
-
-                            <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-foreground-accent">
-                                {description}
-                            </p>
                         </motion.div>
 
                         <div className="mx-auto lg:ml-0 w-full">
@@ -88,7 +84,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
 
                 <div className={clsx("mt-5 lg:mt-0", { "lg:order-2": imageAtRight })}>
                     <div className={clsx("w-fit flex", { "justify-start": imageAtRight, "justify-end": !imageAtRight })}>
-                        <Image src={imageSrc} alt="title" width="384" height="762" quality={100} className="lg:ml-0" />
+                        <Image src={imageSrc} alt="title" width="700" height="900" quality={100} className="lg:ml-0 rounded-lg" />
                     </div>
                 </div>
             </motion.div>
