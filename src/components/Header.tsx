@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-
+import { FaFacebook, FaApple, FaLine, } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 import Container from './Container';
 import { menuItems } from '@/data/menuItems';
 
@@ -19,17 +19,13 @@ const Header: React.FC = () => {
     return (
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
             <Container className="!px-0">
-                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
+                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-1 px-4 md:py-10 ">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2">
-                        <Image
-                        src="/images/logo.PNG"
-                        width={33}
-                        height={33}
-                        className='min-w-fit'
-                        alt="Screenshot of the dashboard project showing mobile version"
-                        />
-{/*
+                    <Link href="/" className="flex -inset-1 items-center font-semibold text-2xl">
+                        <h1>Big</h1>
+                        <FaApple className=' pb-2 dark:invert size-11' />
+                        <h1>Apple</h1>
+                        {/*
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </span>
@@ -47,18 +43,30 @@ import { siteDetails } from '@/data/siteDetails';
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                            <Link href="#cta" className="text-white bg-primary hover:bg-primary-accent px-4 py-2 rounded-full transition-colors">
                                 ติดต่อด่วน
                             </Link>
                         </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center">
+                    <div className="md:hidden flex gap-3 items-center">
+                        <div className='flex gap-2'>
+                            <Link href='https://line.me/ti/p/~@bigapplestore'>
+                                <FaLine className='dark:invert size-6 md:size-9' />
+                            </Link>
+                            <Link href='https://www.facebook.com/bigapplestore824/'>
+                                <FaFacebook className='dark:invert size-6 md:size-9' />
+                            </Link>
+                            <Link href='tel: 080-583-9761'>
+                                <IoCall className='dark:invert size-6 md:size-9' />
+                            </Link>
+                        </div>
+
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
+                            className="bg-primary text-white focus:outline-none rounded-full px-1 py-1 flex items-center justify-center"
                             aria-controls="mobile-menu"
                             aria-expanded={isOpen}
                         >
