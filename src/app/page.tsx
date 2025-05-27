@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
-import Section from "@/components/Section";
 
 const HomePage: React.FC = () => {
   return (

@@ -1,14 +1,6 @@
-import { FaDatabase } from "react-icons/fa6";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { MdLaptopMac } from "react-icons/md";
-import { BsBatteryCharging } from "react-icons/bs";
-
-
-
-
 import { IBenefit } from "@/types"
 import Image from "next/image";
-
 export const benefits: IBenefit[] = [
     {
         title: "ขายกับเราดียังไง?",
