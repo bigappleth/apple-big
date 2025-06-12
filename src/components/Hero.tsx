@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import AppStoreButton from './AppStoreButton';
-import PlayStoreButton from './PlayStoreButton';
+
 import { heroDetails } from '@/data/hero';
 
 const Hero: React.FC = () => {
@@ -34,14 +33,14 @@ const Hero: React.FC = () => {
                             className='relative mx-auto z-10 rounded-md'
                         />
                     </div>
-                    <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
+                    
                 </div>
-                <div className="mt-3 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <AppStoreButton dark />
-                    <PlayStoreButton dark />
-                </div>
+                
             </div>
+            
         </section>
+        
+        
     );
 };
 export default Hero;

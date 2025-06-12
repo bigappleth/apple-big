@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { kanit, inter } from "./ui/fonts";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { siteDetails } from '@/data/siteDetails';
-
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
-    images: ['/images/twitter-image.jpg'],
+    images: ['/images/hero-mockup.webp'],
   },
 };
 
@@ -46,7 +44,8 @@ export default function RootLayout({
       >
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
-        <SpeedInsights/>
+        <SpeedInsights />
+
         <main>
           {children}
         </main>
