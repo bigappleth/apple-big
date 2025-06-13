@@ -6,7 +6,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: #021584;
-  --secondary: #e5c230;
+  --secondary: #9acafc;
 
   --primary-accent: #233dcf;
   --foreground-accent: #454545;
@@ -39,5 +39,9 @@ body {
 
 .benefit-section:last-of-type > div {
   @apply mb-10;
+}
+.footer {
+  @apply text-sm block text-foreground-accent hover:text-foreground-accent hover:text-foreground;
+  text-decoration: none;
 }
 

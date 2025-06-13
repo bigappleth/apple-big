@@ -23,19 +23,15 @@ const Header: React.FC = () => {
                 <nav className="shadow-md md:shadow-none bg-primary md:bg-transparent mx-auto flex justify-between items-center py-1 px-4 md:py-10 ">
                     {/* Logo */}
                     <Link href="/" className=" -inset-1 items-center">
-                        <Image
-                            priority
-                            src="/images/icons/logo.svg"
-                            width={120}
-                            height={120}
-                            alt="Big Apple Logo"
-                        />
-                        {/*
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
-                            {siteDetails.siteName}
-                        </span>
-import { siteDetails } from '@/data/siteDetails';
-*/}
+                        <div className="w-32 h-10 relative">
+                            <Image
+                                src="/images/icons/logo.svg"
+                                alt="Logo"
+                                fill
+                                style={{ objectFit: "contain" }}
+                                priority
+                            />
+                        </div>
                     </Link>
 
                     {/* Desktop Menu */}
@@ -56,22 +52,10 @@ import { siteDetails } from '@/data/siteDetails';
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex gap-3 items-center">
-                        <div className='flex gap-4 text-white '>
-                            <Link href='https://line.me/ti/p/~@bigapplestore'>
-                                <FaLine className='size-6 md:size-9' />
-                            </Link>
-                            <Link href='https://www.facebook.com/bigapplestore824/'>
-                                <FaFacebook className='dark:invert size-6 md:size-9' />
-                            </Link>
-                            <Link href='tel: 080-583-9761'>
-                                <IoCall className='dark:invert size-6 md:size-9' />
-                            </Link>
-                        </div>
-
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="bg-primary-accent hover:bg-secondary text-white focus:outline-none rounded-full px-1 py-1 flex items-center justify-center"
+                            className="bg-primary-accent text-white hover:bg-white hover:text-black focus:outline-none rounded-full px-1 py-1 flex items-center justify-center"
                             aria-controls="mobile-menu"
                             aria-expanded={isOpen}
                         >
@@ -96,8 +80,8 @@ import { siteDetails } from '@/data/siteDetails';
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
             >
-                <div id="mobile-menu" className="md:hidden bg-primary shadow-lg">
-                    <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
+                <div id="mobile-menu" className="md:hidden shadow-lg">
+                    <ul className="flex flex-col space-y-4 pt-1 pb-6 px-9">
                         {menuItems.map(item => (
                             <li key={item.text}>
                                 <Link href={item.url} className="text-white hover:text-secondary block" onClick={toggleMenu}>
@@ -105,8 +89,18 @@ import { siteDetails } from '@/data/siteDetails';
                                 </Link>
                             </li>
                         ))}
-                        <li>
-                            <Link href="tel: 080-583-9761" className="text-white bg-primary-accent hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                        <li className="flex items-center gap-3">
+
+                            <Link className='hover:bg-black text-white rounded-full' href='https://line.me/ti/p/~@bigapplestore'>
+                                <FaLine className='size-6 md:size-9' />
+                            </Link>
+                            <Link className='hover:bg-black text-white rounded-full' href='https://www.facebook.com/bigapplestore824/'>
+                                <FaFacebook className='dark:invert size-6 md:size-9' />
+                            </Link>
+                            <Link className='hover:bg-black text-white rounded-full' href='tel: 080-583-9761'>
+                                <IoCall className='dark:invert size-6 md:size-9' />
+                            </Link>
+                            <Link href="tel: 080-583-9761" className="text-white bg-primary-accent hover:bg-white hover:text-black px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
                                 ติดต่อด่วน
                             </Link>
                         </li>

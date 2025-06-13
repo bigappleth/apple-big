@@ -4,13 +4,12 @@ import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
 import VideoSection from "@/components/VideoSection";
 
-
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
       <VideoSection />
-      <Container className="mt-32">
+      <Container >
         <Benefits />
       </Container>
     </>

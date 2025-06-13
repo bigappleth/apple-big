@@ -8,4 +8,7 @@ export const heroDetails = {
     letin: '/images/services/let-in.png',
     install: '/images/services/install.png',
     turn: '/images/services/turn.png',
+    siteName: 'BIG APPLE STORE',
+    siteUrl: 'https://bigapple.com',
+    siteDescription: 'รับซื้อสินค้า APPLE ให้ราคาสูง จ่ายเงินทันที! บริการรับซื้อถึงที่',
 }

@@ -26,7 +26,7 @@ export const footerDetails: {
             url: "#iMac"
         }
     ],
-    email: 'buy@bigapple.com',
+    email: 'buy@bigapplestorethailand.com',
     telephone: '080-583-9761',
     socials: {
         facebook: 'https://www.facebook.com/bigapplestore824',
