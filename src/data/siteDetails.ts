@@ -1,5 +1,6 @@
 export const siteDetails = {
-    siteName: 'BIG APPLE STORE',
+    siteName: 'Big Apple Store',
+    siteDescription: 'Big Apple Store - รับซื้อโทรศัพท์มือถือและสินค้าไอทีทุกชนิด',
     siteUrl: 'https://www.bigapplestorethailand.com/',
     siteNotice: 'iPhone, iPod, iPad and Mac are registered trademarks of Apple, Inc.',
     siteInt: 'Big Apple store is a third-party resaler company and is not affiliated with Apple.',

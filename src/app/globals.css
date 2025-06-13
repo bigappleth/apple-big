@@ -41,7 +41,7 @@ body {
   @apply mb-10;
 }
 .footer {
-  @apply text-sm block text-foreground-accent hover:text-foreground-accent hover:text-foreground;
+  @apply text-sm block text-foreground-accent hover:text-foreground;
   text-decoration: none;
 }
 

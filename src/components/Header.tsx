@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                 <nav className="shadow-md md:shadow-none bg-primary md:bg-transparent mx-auto flex justify-between items-center py-1 px-4 md:py-10 ">
                     {/* Logo */}
                     <Link href="/" className=" -inset-1 items-center">
-                        <div className="w-32 h-10 relative">
+                        <div className="w-32 h-16 relative">
                             <Image
                                 src="/images/icons/logo.svg"
                                 alt="Logo"
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-white bg-primary-accent hover:bg-secondary px-4 py-2 rounded-full transition-colors">
+                            <Link href="tel: 080-583-9761" className="text-white bg-primary-accent hover:bg-white hover:text-black px-4 py-2 rounded-full transition-colors">
                                 ติดต่อด่วน
                             </Link>
                         </li>

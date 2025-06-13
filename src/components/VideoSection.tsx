@@ -6,8 +6,6 @@ import PlayStoreButton from './PlayStoreButton';
 import { heroDetails } from '@/data/hero';
 import Link from "next/link";
 
-const { siteName } = heroDetails;
-
 const VideoSection = () => {
     const [videoProgress, setVideoProgress] = useState<number>(0);
     const [videoDuration, setVideoDuration] = useState<number>();
@@ -24,12 +22,13 @@ const VideoSection = () => {
     useEffect(() => {
         if (isPaused) return;
         const currentTime = videoRef.current?.currentTime;
-        if (videoDuration != null && currentTime != null) {
+        if (videoDuration != null && currentTime != null && videoDuration !== 0) {
             const loadingTimeout = setTimeout(() => {
-                if (videoProgress === currentTime / videoDuration) {
+                const newProgress = currentTime / videoDuration;
+                if (videoProgress === newProgress) {
                     setVideoProgress((prev) => prev + 0.000001);
                 } else {
-                    setVideoProgress(currentTime / videoDuration);
+                    setVideoProgress(newProgress);
                 }
             }, 10);
 
@@ -55,7 +54,7 @@ const VideoSection = () => {
             <div className="flex flex-col lg:flex-row flex-1 w-full max-w-4xl items-center justify-between gap-8 lg:gap-12">
                 {/* Video */}
                 <div className="w-full flex justify-center lg:flex-1">
-                    <div className="relative w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-lg aspect-[2/3] rounded-xl overflow-hidden shadow-2xl">
+                    <div className="relative w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-lg aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
                         <div className="absolute top-4 right-4 z-10">
                             <VideoPlayerControls
                                 progress={videoProgress}
@@ -71,8 +70,23 @@ const VideoSection = () => {
                             loop
                             autoPlay
                             controls
+                            muted
+                            preload="metadata"
+                            onTimeUpdate={() => {
+                                const currentTime = videoRef.current?.currentTime;
+                                if (currentTime != null && videoDuration != null) {
+                                    setVideoProgress(currentTime / videoDuration);
+                                }
+                            }}
+                            onLoadedMetadata={() => {
+                                const video = videoRef.current;
+                                if (video) {
+                                    setVideoDuration(video.duration);
+                                }
+                            }}
+                            onPause={() => setIsPaused(true)}
                         >
-                            <source src="/videos/big-apple.mp4" />
+                            <source src="/videos/big_apple_mobile.mp4" />
                         </video>
                     </div>
                 </div>

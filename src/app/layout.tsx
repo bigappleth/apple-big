@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { siteDetails } from '@/data/siteDetails';
 import "./globals.css";
+import DisableInspect from '@/components/DisableInspect';
 
 export const metadata: Metadata = {
   title: siteDetails.metadata.title,
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    apple: '/images/apple-touch-icon.svg',
   },
   manifest: '/site.webmanifest',
   robots: {
@@ -77,6 +78,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <DisableInspect />
+      </head>
       <body
         className={`${inter.className} ${kanit.className} antialiased`}
       >

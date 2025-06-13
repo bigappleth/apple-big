@@ -11,19 +11,23 @@ export const footerDetails: {
     quickLinks: [
         {
             text: "ขาย iPhone",
-            url: "#iPhone"
+            url: "iphone"
         },
         {
             text: "ขาย iPad",
-            url: "#iPad"
+            url: "ipad"
         },
         {
             text: "ขาย Macbook",
-            url: "#Macbook"
+            url: "macbook"
         },
         {
             text: "ขาย iMac",
-            url: "#iMac"
+            url: "imac"
+        },
+        {
+            text: "Contact Us",
+            url: "contact"
         }
     ],
     email: 'buy@bigapplestorethailand.com',
