@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Mail, Phone, ShoppingCart, Briefcase, BookOpen, Globe } from 'lucide-react';
-import Link from 'next/link';
 
 // Functional component for the Contact Us page
 const ContactPage: React.FC = () => {
