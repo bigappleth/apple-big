@@ -22,12 +22,12 @@ const Header: React.FC = () => {
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-primary md:bg-transparent mx-auto flex justify-between items-center py-1 px-4 md:py-10 ">
                     {/* Logo */}
-                    <Link href="/" className="flex -inset-1 items-center">
+                    <Link href="/" className=" -inset-1 items-center">
                         <Image
                             priority
                             src="/images/icons/logo.svg"
-                            height={140}
-                            width={140}
+                            width={120}
+                            height={120}
                             alt="Big Apple Logo"
                         />
                         {/*

@@ -47,22 +47,24 @@ const VideoSection = () => {
         }
     };
     return (
-        <main className="">
-            
+        <main className="min-h-screen flex flex-col items-center justify-center py-8 px-4">
             <div className="relative w-[90%] max-w-6xl mx-auto my-8 rounded-xl overflow-hidden">
-                <div className="absolute top-4 left-4 z-10">
+                <div className="relative w-96 h-auto mx-auto my-8 rounded-xl overflow-hidden shadow-2xl">
+                    <div className="absolute top-4 right-4 z-10">
                     <VideoPlayerControls
                         progress={videoProgress}
                         isPaused={isPaused}
                         onPlayPause={togglePlayPause}
                     />
                 </div>
-                <video className="w-80" ref={videoRef} playsInline loop autoPlay>
+                <video className="w-96 object-cover rounded-xl" ref={videoRef}  playsInline loop autoPlay>
                     <source src="/videos/big-apple.mp4" />
                 </video>
+                </div>
+                
             </div>
-            <p className=" -mt-80 pl-36 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
-            <div className="mt-3 pl-36 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
+            <p className="mt-8 px-4 text-center text-lg leading-relaxed md:text-xl font-medium text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center sm:gap-4 px-4 w-full">
                     <AppStoreButton dark />
                     <PlayStoreButton dark />
                 </div>
